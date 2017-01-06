@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SystemSelectComponent } from './system-select/system-select.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SystemSelectComponent
   ],
   imports: [
     AppRoutingModule,
