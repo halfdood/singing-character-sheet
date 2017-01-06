@@ -5,7 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FaeModule } from './fae/fae.module';
 import { SystemSelectComponent } from './system-select/system-select.component';
+
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
@@ -17,6 +19,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     AppRoutingModule,
     BrowserModule,
+    FaeModule,
     FormsModule,
     HttpModule
   ],
