@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SystemSelectComponent } from './system-select/system-select.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SystemSelectComponent
+    SystemSelectComponent,
+    NotFoundComponent
   ],
   imports: [
     AppRoutingModule,
