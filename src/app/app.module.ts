@@ -13,8 +13,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SystemSelectComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SystemSelectComponent
   ],
   imports: [
     AppRoutingModule,
