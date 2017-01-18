@@ -14,7 +14,7 @@ export class CharacterSelectComponent implements OnInit {
     private service: CharactersService) { }
 
   ngOnInit() {
-    this.characters = this.service.get();
+    this.characters = this.service.all();
   }
 
 }
