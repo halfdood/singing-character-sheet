@@ -8,7 +8,9 @@ const ALL = 'fae_characters_all';
 export class CharactersService {
 
   constructor(
-    private store: StoreService) { }
+    private store: StoreService) {
+      this.store.set(ALL, JSON.stringify(['asdf', 'qwe']));
+     }
 
   all (): string[] {
     return JSON.parse(this.store.get(ALL)) as string[] || [];
