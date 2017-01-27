@@ -1,3 +1,9 @@
 <p>
   character-select works!
 </p>
+<nav>
+  <a *ngFor="let char of characters">
+    {{char}}
+  </a>
+  <a *ngFor="let char of characters" routerLink="/fae/{{char}}" routerLinkActive="active">{{char}}</a>
+</nav>
