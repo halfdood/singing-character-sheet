@@ -1,9 +1,9 @@
-nav {
+md-nav-list {
     display: flex;
     flex-direction: column;
 }
 
-nav a {
+md-nav-list a {
     text-align: center;
     border: 1px solid black;
     color: black;
