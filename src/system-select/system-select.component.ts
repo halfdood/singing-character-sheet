@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ToolbarService } from './../services/toolbar.service';
+
 @Component({
   selector: 'app-system-select',
   templateUrl: './system-select.component.html',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SystemSelectComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private toolbarService: ToolbarService) { }
 
   ngOnInit() {
+    this.toolbarService.setTitle('Please select your roleplay system');
   }
 
 }

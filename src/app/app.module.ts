@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FaeModule } from './../fae/fae.module';
 import { NotFoundComponent } from './../not-found/not-found.component';
 import { StoreService } from './../services/store.service';
+import { ToolbarService } from './../services/toolbar.service';
 import { SystemSelectComponent } from './../system-select/system-select.component';
 
 @NgModule({
@@ -25,7 +26,7 @@ import { SystemSelectComponent } from './../system-select/system-select.componen
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [StoreService],
+  providers: [StoreService, ToolbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
