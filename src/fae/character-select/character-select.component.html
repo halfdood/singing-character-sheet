@@ -1,7 +1,8 @@
-<p>
-  character-select works!
-</p>
-<nav>
-  <a *ngFor="let char of characters">{{char}}</a>
-  <!--<a *ngFor="let char of characters" routerLink="/fae/{{char}}" routerLinkActive="active">{{char}}</a>-->
-</nav>
+<md-nav-list>
+  <md-card *ngFor="let char of characters">
+    <md-card-title>{{char}}</md-card-title>
+    <md-card-actions>
+      <a md-raised-button routerLink="/fae/{{char}}" >View</a>
+    </md-card-actions>
+  </md-card>
+</md-nav-list>
