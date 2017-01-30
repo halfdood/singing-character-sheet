@@ -1,8 +1,8 @@
 <md-nav-list>
   <md-card *ngFor="let char of characters">
-    <md-card-title>{{char}}</md-card-title>
+    <md-card-title>{{char.name}}</md-card-title>
     <md-card-actions>
-      <a md-raised-button routerLink="/fae/{{char}}" >View</a>
+      <a md-raised-button routerLink="/fae/{{char.id}}" >View</a>
     </md-card-actions>
   </md-card>
 </md-nav-list>
