@@ -7,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FaeModule } from './../fae/fae.module';
+import { FaeRoutingModule } from './../fae/fae-routing.module';
 import { NotFoundComponent } from './../not-found/not-found.component';
 import { StoreService } from './../services/store.service';
 import { ToolbarService } from './../services/toolbar.service';
@@ -19,12 +20,13 @@ import { SystemSelectComponent } from './../system-select/system-select.componen
     SystemSelectComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
     FaeModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    FaeRoutingModule,
+    AppRoutingModule
   ],
   providers: [StoreService, ToolbarService],
   bootstrap: [AppComponent]
